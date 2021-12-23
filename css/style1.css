@@ -711,8 +711,12 @@ h2 {
   padding-left: 2.3px;
 }
 
+.tab-3 {
+  margin-left: 43px;
+}
+
 .tab-content-text {
-  margin-top: 13px;
+  margin-top: 33px;
   padding-left: 1px;
   font-family: Montserrat;
   font-style: normal;
@@ -786,7 +790,7 @@ h2 {
 
 .how-weareworking-img {
   margin-left: 900px;
-  margin-top: -359px;
+  margin-top: -195px;
   width: 870px;
   height: 465px;
   display: block;
@@ -797,33 +801,33 @@ h2 {
 
 .how-weareworking-img-2 {
   margin-left: 899px;
-  margin-top: -263px;
+  margin-top: -166px;
   width: 870px;
   height: 465px;
   display: block;
-  background-image: url(../IMG/working/clean.jpg);
+  background-image: url(../IMG/working/abz.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
 .how-weareworking-img-3 {
   margin-left: 899px;
-  margin-top: -359px;
+  margin-top: -229px;
   width: 870px;
   height: 465px;
   display: block;
-  background-image: url(../IMG/working/roadSign.jpg);
+  background-image: url(../IMG/working/kamaz.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
 .how-weareworking-img-4 {
   margin-left: 899px;
-  margin-top: -263px;
+  margin-top: -132px;
   width: 870px;
   height: 465px;
   display: block;
-  background-image: url(../IMG/working/tab-4.jpg);
+  background-image: url(../IMG/working/smets.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -1289,21 +1293,30 @@ label:before {
   vertical-align: middle;
 }
 
-input:checked + label:before {
-  content: " ";
-  background-image: url(../IMG/footer/Rectangle\ 44.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
+/*input:checked + label:before {*/
+/*  content: " ";*/
+/*  background-image: url(../IMG/footer/Rectangle\ 44.png);*/
+/*  background-repeat: no-repeat;*/
+/*  background-size: 100%;*/
+/*}*/
 
 .section-footer-content-right {
   width: 599px;
-  margin-top: 111px;
-  margin-left: -17;
-  padding-left: 192px;
+  margin-top: 48px;
+  padding-left: 35px;
 }
 
 .content-right-text {
+  padding-left: 46px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--primay-color-light_gray);
+}
+
+.footer_contacts_text {
   padding-left: 46px;
   font-family: Montserrat;
   font-style: normal;
