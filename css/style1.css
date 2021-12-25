@@ -157,18 +157,18 @@ h2 {
   display: none;
 }
 
-.top-logo {
-  width: 224px;
-  height: 72px;
-  background-image: url("../IMG/DRSU/Katok.png");
-  background-size: 46%;
-  background-repeat: no-repeat;
-  margin-top: 2px;
-}
+/*.top-logo {*/
+/*  width: 224px;*/
+/*  height: 72px;*/
+/*  background-image: url("../IMG/DRSU/Katok.png");*/
+/*  background-size: 46%;*/
+/*  background-repeat: no-repeat;*/
+/*  margin-top: 2px;*/
+/*}*/
 
-.top-logo-link {
-  margin-left: -13px;
-}
+/*.top-logo-link {*/
+/*  margin-left: -13px;*/
+/*}*/
 
 .logo_text {
   font-family: Montserrat;
@@ -1326,6 +1326,9 @@ label:before {
   color: var(--primay-color-light_gray);
 }
 
+
+
+
 @media (max-width: 1024px) {
   .container {
     min-width: 1024px;
@@ -1548,13 +1551,21 @@ label:before {
     margin-left: 50px !important;
   }
 
-  .slide-1 {
+  .title-banner {
+    width: 100%;
+    height: 620px;
+    background-image: url(../IMG/header/title5-1024.jpg);
+    background-repeat: no-repeat;
     background-size: 100%;
-    width: 90.2%;
-    height: 668px;
-    background-image: url(../IMG/header/title-1024.jpg);
-    background-position: bottom;
   }
+
+  /*.slide-1 {*/
+  /*  background-size: 100%;*/
+  /*  width: 90.2%;*/
+  /*  height: 668px;*/
+  /*  background-image: url(../IMG/DRSU/roadwork1024.jpg);*/
+  /*  background-position: bottom;*/
+  /*}*/
 
   .swiper-wrapper {
     width: 100%;
@@ -1622,17 +1633,17 @@ label:before {
   }
 
   .about-us-content-left-item {
-    width: 100%;
+    width: 94.5%;
     height: 640px;
     margin-top: 41px;
 
     padding-top: 445px;
 
-    background-image: url(../IMG/ForUs/Rectangle\ 2-1024.png);
+    background-image: url(../IMG/DRSU/roadwork1024.jpg);
   }
 
   .about-us-content-left-shadow {
-    width: 94.7%;
+    width: 100%;
     margin-top: 22px;
     height: 173px;
   }
@@ -1733,19 +1744,19 @@ label:before {
 
   .how-weareworking-img {
     width: 437px;
-    height: 689px;
-    margin-top: -614px;
+    height: 600px;
+    margin-top: -199px;
     margin-left: 488px;
-    background-image: url(../IMG/working/Rectangle\ 18-1204.jpg);
+    background-image: url(../IMG/working/repair-1024.jpg);
   }
 
   .how-weareworking-img-2 {
     width: 437px;
-    height: 689px;
-    margin-top: -454px;
+    height: 599px;
+    margin-top: -104px;
     margin-left: 488px;
-    background-image: url(../IMG/working/tab-2.jpg);
-    background-size: 294%;
+    background-image: url(../IMG/working/abz.jpg);
+    background-size: 206%;
     background-position-x: 34%;
     background-position-y: 52%;
     -webkit-box-sizing: content-box;
@@ -1754,11 +1765,11 @@ label:before {
 
   .how-weareworking-img-3 {
     width: 437px;
-    height: 689px;
-    margin-top: -582px;
+    height: 597px;
+    margin-top: -199px;
     margin-left: 488px;
-    background-image: url(../IMG/working/tab-3.jpg);
-    background-size: 294%;
+    background-image: url(../IMG/working/kamaz.jpg);
+    background-size: 243%;
     background-position-x: 44%;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
@@ -1766,11 +1777,11 @@ label:before {
 
   .how-weareworking-img-4 {
     width: 437px;
-    height: 689px;
-    margin-top: -422px;
+    height: 600px;
+    margin-top: -72px;
     margin-left: 488px;
-    background-image: url(../IMG/working/tab-4.jpg);
-    background-size: 294%;
+    background-image: url(../IMG/working/smets.jpg);
+    background-size: 245%;
     background-position-x: 44%;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
@@ -1832,8 +1843,8 @@ label:before {
   }
 
   .line-1 {
-    padding-top: 47px;
-    padding-bottom: 43px;
+    padding-top: 26px;
+    padding-bottom: 30px;
   }
 
   .line-2 {
@@ -1842,8 +1853,8 @@ label:before {
   }
 
   .line-3 {
-    padding-top: 39px;
-    padding-bottom: 42px;
+    padding-top: 24px;
+    padding-bottom: 29px;
   }
 
   .line-4 {
@@ -1862,7 +1873,7 @@ label:before {
   }
 
   .element-2 {
-    margin-top: 9px;
+    margin-top: -6px;
   }
 
   .element-4 {
@@ -1879,7 +1890,11 @@ label:before {
 
   .section-footer-content-left {
     margin-top: 47.9px;
-    margin-left: -1px;
+    margin-left: 117px;
+  }
+
+  .myMap {
+    width: 700px;
   }
 
   .footer-logo {
