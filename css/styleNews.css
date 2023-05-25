@@ -6,6 +6,12 @@
 .news-titlep {
     padding-top: 102px;
     margin-left: 60px;
+   
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primay-color-gray);
   }
 
   .news-name {
