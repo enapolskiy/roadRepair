@@ -448,10 +448,39 @@ h2 {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+
+  overflow: hidden;
+  height:200px;
+  transition:all 0.5s;
+
   /* line-height: 32.99px; */
   line-height: 200%;
   color: var(--primay-color-gray);
 }
+
+#link{
+  float:left;
+
+}
+.open{
+  height:100%;
+
+}
+
+.open_text_link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--primay-color-gray);
+}
+
+.open_text_link:hover {
+color: var(--primary-color_button_lincs);
+}
+
+
 
 .about-us-desription-element {
   display: inline-block;
@@ -536,9 +565,11 @@ h2 {
 /*}*/
 
 .about-us-content {
+  margin-top: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
 }
 
 .about-us-content-right {
@@ -564,20 +595,20 @@ h2 {
 }
 
 .img_top {
-  width: 600px;
+  width: 436px;
   height: 262px;
   margin-top: 30px;
-  background-size: 103%;
+  background-size: 104%;
   background-image: url("../IMG/DRSU/katok1.png");
   background-repeat: no-repeat;
 }
 
 .img_down {
-  width: 600px;
+  width: 610px;
   height: 150px;
   margin-left: 18px;
-  margin-top: 30px;
-  background-size: 103%;
+  margin-top: 77px;
+  background-size: 97%;
   background-image: url("../IMG/DRSU/grader.png");
   background-repeat: no-repeat;
 }
@@ -615,6 +646,18 @@ h2 {
   line-height: 32px;
 
   color: var(--primay-color-gray);
+}
+
+.content-text-header-bottom {
+  /*margin-left: 130px;*/
+}
+
+.right-description-bottom {
+  /*margin-left: 130px;*/
+}
+
+.about-us-content-right-info {
+  margin-left: -25px;
 }
 
 /* How-we are working */
@@ -838,6 +881,21 @@ h2 {
   max-width: 1770px;
 }
 
+.docs_link {
+  padding: 7px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--primay-color-gray);
+}
+
+.docs_link:hover{
+  color: var(--primary-color_button_lincs);
+}
+
 .questions-header {
   padding-top: 22px;
   margin-left: 2px;
@@ -1017,8 +1075,8 @@ h2 {
 }
 
 .accordion-text {
-  display: flex;
-  justify-content: space-around;
+  display: block;
+  justify-content: flex-start;
   width: 70%;
   margin-top: 30px;
   margin-bottom: 40px;
@@ -1030,6 +1088,92 @@ h2 {
   letter-spacing: 0em;
   text-align: left;
   color: #000000;
+}
+
+.swiper {
+  width: 1766px;
+  margin-top: 80px;
+  /*display: flex;*/
+  left: 15px;
+  min-width: 60%;
+  height: 700px;
+  margin-left: 50px;
+}
+
+.swiper-container {
+  /*width: 1770px;*/
+  width: 100%;
+  height: 620px;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--primay-color-gray-3) !important;
+}
+
+.swiper-button-prev:hover {
+  color: var(--primary-color_button_lincs) !important;
+}
+.swiper-button-next:hover {
+  color: var(--primary-color_button_lincs) !important;
+}
+
+.swiper-button-prev:hover:active {
+  color: var(--primary-color_button_lincs_after) !important;
+}
+.swiper-button-next:hover:active {
+  color: var(--primary-color_button_lincs_after) !important;
+}
+
+
+
+.slide-1 {
+  width: 100%;
+  height: 620px;
+  background-size: 114%;
+  background-image: url(../IMG/DRSU/slide1.jpg);
+  background-repeat: no-repeat;
+}
+
+.slide-2 {
+  width: 100%;
+  height: 620px;
+  background-size: 114%;
+  background-image: url(../IMG/DRSU/slide2.jpg);
+  background-repeat: no-repeat;
+}
+
+.slide-3 {
+  width: 100%;
+  height: 620px;
+  background-size:114%;
+  background-image: url(../IMG/DRSU/slide3.jpg);
+  background-repeat: no-repeat;
+}
+
+.slide-4 {
+  width: 100%;
+  height: 620px;
+  background-size: 114%;
+  background-image: url(../IMG/DRSU/slide4.jpg);
+  background-repeat: no-repeat;
+}
+
+.slide-5 {
+  width: 100%;
+  height: 620px;
+  background-size: 114%;
+  background-image: url(../IMG/DRSU/slide5.jpg);
+  background-repeat: no-repeat;
+}
+
+.slide-6 {
+  width: 100%;
+  height: 620px;
+  background-size:114%;
+  background-image: url(../IMG/DRSU/slide6.jpg);
+  background-repeat: no-repeat;
 }
 
 
@@ -1093,6 +1237,7 @@ h2 {
   line-height: 22px;
   color: var(--primay-color-light_gray);
   text-decoration: none;
+ 
 }
 
 .footer-info-link:hover {
@@ -1890,6 +2035,10 @@ label:before {
 
   .element-4 {
     margin-top: 9px;
+  }
+
+  .swiper {
+    display: none;
   }
 
   .section-footer {
@@ -2938,7 +3087,7 @@ label:before {
 
   .accordion-text {
     display: block;
-    justify-content:flex-start;
+    justify-content: flex-start;
     width: 90%;
     font-size: 12px;
     line-height: 28px;
