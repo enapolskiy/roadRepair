@@ -153,3 +153,20 @@
     width: 100%;
     left: 0;
 }
+
+.allNews-link {
+    text-decoration: none;
+}
+
+.allNews-link:hover {
+    color: var(--primary-color_button_lincs);
+}
+
+.ing02062023 {
+    height: 100%;
+   background-image:url(../IMG/newsPhotos/02062023.jpg)
+}
+
+.buttonNews {
+    text-decoration: none;
+}
