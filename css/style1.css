@@ -514,14 +514,6 @@ color: var(--primary-color_button_lincs);
   color: var(--primay-color-gray);
 }
 
-.content-text-header-bottom {
-  /*margin-left: 130px;*/
-}
-
-.right-description-bottom {
-  /*margin-left: 130px;*/
-}
-
 .about-us-content-right-info {
   margin-left: -25px;
 }
@@ -2912,6 +2904,11 @@ label:before {
   .myMap {
     display: none;
   }
+
+
+
+
+
 
   /*.application-form {*/
   /*  width: 306px;*/

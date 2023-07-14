@@ -1,185 +1,206 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DRSU</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style1.css" />
-    <link rel="stylesheet" href="./css/styleNews.css" />
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DRSU</title>
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/style1.css" />
+  <link rel="stylesheet" href="./css/styleNews.css" />
 
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-      $(function () {
-        $("#accordion").accordion({
-          active: false,
-          collapsible: true,
-          heightStyle: 'content',
-        });
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#accordion").accordion({
+        active: false,
+        collapsible: true,
+        heightStyle: 'content',
       });
-    </script>
+    });
 
-  </head>
+  </script>
 
-  <body>
-    <header class="header">
-      <div class="container header-container">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
 
 
 
-        <nav id="menu" class="menu is-active">
+      <nav id="menu" class="menu is-active">
 
-          <ul class="menu-nav-list">
-            <li class="menu-nav-item">
-                <a class="menu-nav-item-text nav-linc" href="#aboutUs"> О нас</a>
-            </li>
-            <li class="menu-nav-item">
-              <a class="menu-nav-item-text nav-linc" href="#working">Деятельность</a>
+        <ul class="menu-nav-list">
+          <li class="menu-nav-item">
+            <a class="menu-nav-item-text nav-linc" href="#aboutUs"> О нас</a>
+          </li>
+          <li class="menu-nav-item">
+            <a class="menu-nav-item-text nav-linc" href="#working">Деятельность</a>
           </li>
           <li class="menu-nav-item">
             <a class="menu-nav-item-text nav-linc" href="#docs"> Документация</a>
-        </li>
-<!--        <li class="menu-nav-item">-->
-<!--          <a class="menu-nav-item-text nav-linc" href="#photo">Галерея</a>-->
-<!--      </li>-->
-      <li class="menu-nav-item">
-        <a class="menu-nav-item-text nav-linc" href="#contacts"> Контакты</a>
-    </li>
-          </ul>
-        </nav>
+          </li>
+          <!--        <li class="menu-nav-item">-->
+          <!--          <a class="menu-nav-item-text nav-linc" href="#photo">Галерея</a>-->
+          <!--      </li>-->
+          <li class="menu-nav-item">
+            <a class="menu-nav-item-text nav-linc" href="#contacts"> Контакты</a>
+          </li>
+        </ul>
+      </nav>
 
-        <div id="burger" class="burger" role="button">
-          <span class="burger-line burger-top"></span>
-          <span class="burger-line burger-middle"></span>
-          <span class="burger-line burger-bottom"></span>
-        </div>
-
-
-
-
-
-
-
-        <a tabindex="-1" class="top-logo" href="#" aria-label="Логотип">
-        </a>
-        <div class="logo_text">ОГУП "Кожевниковское ДРСУ"</div>
-
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-item-text nav-linc" href="#aboutUs" aria-label="Секция О нас">О нас</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item-text nav-linc" href="#working" aria-label="Секция Проекты">Деятельность</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item-text nav-linc" href="#docs" aria-label="Секция Этапы">Документация</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item-text nav-linc" href="#photo" aria-label="Секция Отзывы">Галерея</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-linc-last" href="#contacts" aria-label="Секция Контакты">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-
+      <div id="burger" class="burger" role="button">
+        <span class="burger-line burger-top"></span>
+        <span class="burger-line burger-middle"></span>
+        <span class="burger-line burger-bottom"></span>
       </div>
-    </header>
 
-    <main class="main">
-      <section class="title">
-        <div class="container main-container">
-          <div class="title-banner">
-            <div class="title-banner-slide banner-slide-1">
-              <h1 class="title-text-top">
-                ОГУП Кожевниковское ДРСУ
-              </h1>
-            </div>
+
+
+
+
+
+
+      <a tabindex="-1" class="top-logo" href="#" aria-label="Логотип">
+      </a>
+      <div class="logo_text">ОГУП "Кожевниковское ДРСУ"</div>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-item-text nav-linc" href="#aboutUs" aria-label="Секция О нас">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-text nav-linc" href="#working" aria-label="Секция Проекты">Деятельность</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-text nav-linc" href="#docs" aria-label="Секция Этапы">Документация</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-text nav-linc" href="#photo" aria-label="Секция Отзывы">Галерея</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-linc-last" href="#contacts" aria-label="Секция Контакты">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="title">
+      <div class="container main-container">
+        <div class="title-banner">
+          <div class="title-banner-slide banner-slide-1">
+            <h1 class="title-text-top">
+              ОГУП Кожевниковское ДРСУ
+            </h1>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
 
-      <section class="about-us box" id="aboutUs">
-        <div class="container section-about-us-container">
-          <div class="section-about-us-content">
-            <h2 class="about-us-header">О нас</h2>
-            <p class="section-about-us-desription" id="box_txt">
-              	ОГУП Кожевниковское ДРСУ находится в южной части лесной зоны. Центральная усадьба ДРСУ расположена в селе Кожевниково – районном центре Кожевниковского района, удаленном от г.  Томска на 100 км. сообщение с областным центром осуществляется автомобильными дорогами областного значения.
-              	Первые упоминания о дорожной организации на территории Кожевниковской волости относятся к 1921 году. Именно в этот период существовал небольшой дорожный отдел, состоящий из нескольких человек в селении Уртам, но как следствие того, что дорожный отдел не имел своего помещения и постоянного штата работников в 1922 году его имущество было распродано за бесценок одним из местных жителей, у которого и хранился весь дорожный инвентарь, состоящий из нехитрых приспособлений, а небольшой «коллектив» разбежался.
-              Первые документы, найденные в архиве ДРСУ  датированы ноябрем 1939 г., но по словам старожилов и по записям в их трудовых книжках дорожный участок был основан летом 1936 года и являлся филиалом Шегарского райдоротдела, поэтому именно эта дата явилась точкой отсчета празднования в августе 2006 года 70-летнего Юбилея со дня основания. Настоящий же дорожный отдел  в Кожевниковской  волости возник в конце 30-х, он был объединен с Шегарской волостью. Руководство велось из с. Шегарского Шегарской волости. В августе 1936 года руководство дорожным отделом перешло в Кожевниковскую волость и именно с августа 1936 года и принято считать рождением Кожевниковского районного Дорожного отделения (РДО).
-              В 1957 г. Кожевниковский участок стал называться  ДЭУ 348, в 1962 г. он был переименован в ДЭУ № 986,  а в 1979 – в Кожевниковское ДРСУ. Но даже в конце 70-х годов предприятие представляло из себя довольно слабое подразделение с минимальным набором старой техники и занималось в основном содержанием гравийных дорог о масштабном строительстве дорог с твердым покрытием тогда и не мечтали.
-              	Время требовало новых подходов к работе, увеличивался районный автомобильный парк – дороги стали нужны, как воздух. С 1982 предприятие постепенно стало заменять старую технику новой, более современной и именно с этих лет начало обзаводиться своим автопарком, получая ежегодно непосредственно с завода - изготовителя по два большегрузных самосвала. В 1986 г. на асфальтобетонном заводе заработала новая высокопроизводительная установка, начали строиться хозяйственным способом первые квартиры для работников ДРСУ (квартиры, кстати, наши работники, нуждающиеся в жилье получали до 2005 года),  а главное было начато масштабное строительство дорог с твердым покрытием.
-              	В 2003 г. на основании Распоряжения № 113 от 23.06.2003 г. Департамента по управлению государственной собственностью АТО предприятие было переименовано в областное государственное унитарное предприятие «Кожевниковское дорожное ремонтно-строительное управление».
-              	Именно так развивалась история сегодняшнего ДРСУ. Теперь оно представляет собой предприятие высокой организации труда, выполняющее работы по строительству, ремонту и содержанию автомобильных дорог района, обеспечивающих безопасное и бесперебойное движение транспортных средств, а также благоустройство и повышение пропускной способности дорог, грузопоток по которым в последние 10 лет увеличился кратно.
+    <section class="about-us box" id="aboutUs">
+      <div class="container section-about-us-container">
+        <div class="section-about-us-content">
+          <h2 class="about-us-header">О нас</h2>
+          <p class="section-about-us-desription" id="box_txt">
+            ОГУП Кожевниковское ДРСУ находится в южной части лесной зоны. Центральная усадьба ДРСУ расположена в селе
+            Кожевниково – районном центре Кожевниковского района, удаленном от г. Томска на 100 км. сообщение с
+            областным центром осуществляется автомобильными дорогами областного значения.
+            Первые упоминания о дорожной организации на территории Кожевниковской волости относятся к 1921 году. Именно
+            в этот период существовал небольшой дорожный отдел, состоящий из нескольких человек в селении Уртам, но как
+            следствие того, что дорожный отдел не имел своего помещения и постоянного штата работников в 1922 году его
+            имущество было распродано за бесценок одним из местных жителей, у которого и хранился весь дорожный
+            инвентарь, состоящий из нехитрых приспособлений, а небольшой «коллектив» разбежался.
+            Первые документы, найденные в архиве ДРСУ датированы ноябрем 1939 г., но по словам старожилов и по записям в
+            их трудовых книжках дорожный участок был основан летом 1936 года и являлся филиалом Шегарского райдоротдела,
+            поэтому именно эта дата явилась точкой отсчета празднования в августе 2006 года 70-летнего Юбилея со дня
+            основания. Настоящий же дорожный отдел в Кожевниковской волости возник в конце 30-х, он был объединен с
+            Шегарской волостью. Руководство велось из с. Шегарского Шегарской волости. В августе 1936 года руководство
+            дорожным отделом перешло в Кожевниковскую волость и именно с августа 1936 года и принято считать рождением
+            Кожевниковского районного Дорожного отделения (РДО).
+            В 1957 г. Кожевниковский участок стал называться ДЭУ 348, в 1962 г. он был переименован в ДЭУ № 986, а в
+            1979 – в Кожевниковское ДРСУ. Но даже в конце 70-х годов предприятие представляло из себя довольно слабое
+            подразделение с минимальным набором старой техники и занималось в основном содержанием гравийных дорог о
+            масштабном строительстве дорог с твердым покрытием тогда и не мечтали.
+            Время требовало новых подходов к работе, увеличивался районный автомобильный парк – дороги стали нужны, как
+            воздух. С 1982 предприятие постепенно стало заменять старую технику новой, более современной и именно с этих
+            лет начало обзаводиться своим автопарком, получая ежегодно непосредственно с завода - изготовителя по два
+            большегрузных самосвала. В 1986 г. на асфальтобетонном заводе заработала новая высокопроизводительная
+            установка, начали строиться хозяйственным способом первые квартиры для работников ДРСУ (квартиры, кстати,
+            наши работники, нуждающиеся в жилье получали до 2005 года), а главное было начато масштабное строительство
+            дорог с твердым покрытием.
+            В 2003 г. на основании Распоряжения № 113 от 23.06.2003 г. Департамента по управлению государственной
+            собственностью АТО предприятие было переименовано в областное государственное унитарное предприятие
+            «Кожевниковское дорожное ремонтно-строительное управление».
+            Именно так развивалась история сегодняшнего ДРСУ. Теперь оно представляет собой предприятие высокой
+            организации труда, выполняющее работы по строительству, ремонту и содержанию автомобильных дорог района,
+            обеспечивающих безопасное и бесперебойное движение транспортных средств, а также благоустройство и повышение
+            пропускной способности дорог, грузопоток по которым в последние 10 лет увеличился кратно.
 
-            </p>
-            <a class="open_text_link" id="link">Читать далее</a>
-          </div>
+          </p>
+          <a class="open_text_link" id="link">Читать далее</a>
+        </div>
 
-          <div class="about-us-content">
-            <div class="about-us-content-left">
-              <article class="about-us-content-left-item">
-                <div class="about-us-content-left-shadow">
-                  <div class="about-us-content-left-shadow-text">
-                    <p class="left-shadow-text-item">
-                      Целями деятельности предприятия является строительство, ремонт и содержание областных
-                      автомобильных дорог общего пользования.
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <div class="about-us-content-right">
-              <div class="about-us-content-right-content">
-                <div class="about-us-element img_top">
-                </div>
-                <div class="about-us-content-right-info">
-                  <p class="about-us-content-text-header">
-                    Для удовлетворения
-                  </p>
-                  <p class="about-us-content-right-description">
-                    общественных потребностей в транспорте и обеспечения безопасного
-                    и бесперебойного движения автотранспорта и пешеходов.
+        <div class="about-us-content">
+          <div class="about-us-content-left">
+            <article class="about-us-content-left-item">
+              <div class="about-us-content-left-shadow">
+                <div class="about-us-content-left-shadow-text">
+                  <p class="left-shadow-text-item">
+                    Целями деятельности предприятия является строительство, ремонт и содержание областных
+                    автомобильных дорог общего пользования.
                   </p>
                 </div>
               </div>
+            </article>
+          </div>
 
-              <div class="about-us-content-right-content">
-                <div class="about-us-element img_down">
-                </div>
-                <div class="about-us-content-right-info">
-                  <p
-                    class="about-us-content-text-header content-text-header-bottom"
-                  >
-                    Осуществление надзора
-                  </p>
-                  <p
-                    class="about-us-content-right-description right-description-bottom"
-                  >
-                    за состоянием и сохранностью автомобильных дорог и сооружений на них,
-                    поддержание установленного уровня качества содержания, обеспечение
-                    развития сети дорог, а также получение прибыли
-                  </p>
-                </div>
+          <div class="about-us-content-right">
+            <div class="about-us-content-right-content">
+              <div class="about-us-element img_top">
+              </div>
+              <div class="about-us-content-right-info">
+                <p class="about-us-content-text-header">
+                  Для удовлетворения
+                </p>
+                <p class="about-us-content-right-description">
+                  общественных потребностей в транспорте и обеспечения безопасного
+                  и бесперебойного движения автотранспорта и пешеходов.
+                </p>
+              </div>
+            </div>
+
+            <div class="about-us-content-right-content">
+              <div class="about-us-element img_down">
+              </div>
+              <div class="about-us-content-right-info">
+                <p class="about-us-content-text-header content-text-header-bottom">
+                  Осуществление надзора
+                </p>
+                <p class="about-us-content-right-description right-description-bottom">
+                  за состоянием и сохранностью автомобильных дорог и сооружений на них,
+                  поддержание установленного уровня качества содержания, обеспечение
+                  развития сети дорог, а также получение прибыли
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
 
 
@@ -187,14 +208,14 @@
 
 
 
-      <section class="section-how-weareworking box" id="working">
-        <div class="container section-how-weareworking-container">
-          <div class="how-weareworking-content">
-            <div class="section-how-weareworking-left-content">
-              <h2 class="how-weareworking-header">Деятельность</h2>
+    <section class="section-how-weareworking box" id="working">
+      <div class="container section-how-weareworking-container">
+        <div class="how-weareworking-content">
+          <div class="section-how-weareworking-left-content">
+            <h2 class="how-weareworking-header">Деятельность</h2>
 
 
-          <div class="tabs-box">
+            <div class="tabs-box">
               <ul class="tabs">
                 <li class="tabs-item">
                   <button class="tabs-btn btn-reset" data-path="one" aria-label="Шаг 1">Ремонт</button>
@@ -212,442 +233,495 @@
                   <button class="tabs-btn btn-reset tab-3" data-path="four" aria-label="Шаг 4">Консультации</button>
                 </li>
               </ul>
-              </div>
-
-
-
-              <div class="tab-content tab-content-active" data-target="one">
-                <p class="tab-content-text-header">
-<!--                  Проводим ремонт и содержание-->
-                </p>
-                <p class="tab-content-text">
-                  Выполнение работ по содержанию, ремонту, реконструкции и строительству
-                  автомобильных дорог общего пользования.
-                  Строительство и ремонт объектов и сооружений производственного и социального значения
-                  для любых заказчиков.
-                </p>
-
-                <div class="how-weareworking-img"></div>
-              </div>
-
-              <div class="tab-content" data-target="two">
-<!--                <p class="tab-content-text-header">-->
-<!--                  Составляем смету-->
-<!--                </p>-->
-                <p class="tab-content-text content-text-2">
-                  Производство (заготовка), переработка и реализация строительных материалов.
-                  Разработка нерудных строительных материалов.
-                </p>
-                 <div class="how-weareworking-img-2"></div>
-              </div>
-
-              <div class="tab-content" data-target="three">
-<!--                <p class="tab-content-text-header">-->
-<!--                  Привлекаем подрядчиков-->
-<!--                </p>-->
-                <p class="tab-content-text content-text-3">
-                  Оказание платных транспортных и ремонтных услуг и работ для населения и организаций.
-                  Производство и реализация товаров народного потребления.
-                  Коммерческая деятельность включая торгово-закупочную деятельность и оказание посреднеческих услуг.
-                </p>
-                 <div class="how-weareworking-img-3"></div>
-              </div>
-
-              <div class="tab-content" data-target="four">
-<!--                <p class="tab-content-text-header">-->
-<!--                  Инспектируем все этапы работ-->
-<!--                </p>-->
-                <p class="tab-content-text content-text-4">
-                  Инженерно - техническая, внедренческая и консультационная деятельность.
-
-                </p>
-                <div class="how-weareworking-img-4"></div>
-              </div>
             </div>
 
 
+
+            <div class="tab-content tab-content-active" data-target="one">
+              <p class="tab-content-text-header">
+                <!--                  Проводим ремонт и содержание-->
+              </p>
+              <p class="tab-content-text">
+                Выполнение работ по содержанию, ремонту, реконструкции и строительству
+                автомобильных дорог общего пользования.
+                Строительство и ремонт объектов и сооружений производственного и социального значения
+                для любых заказчиков.
+              </p>
+
+              <div class="how-weareworking-img"></div>
+            </div>
+
+            <div class="tab-content" data-target="two">
+              <!--                <p class="tab-content-text-header">-->
+              <!--                  Составляем смету-->
+              <!--                </p>-->
+              <p class="tab-content-text content-text-2">
+                Производство (заготовка), переработка и реализация строительных материалов.
+                Разработка нерудных строительных материалов.
+              </p>
+              <div class="how-weareworking-img-2"></div>
+            </div>
+
+            <div class="tab-content" data-target="three">
+              <!--                <p class="tab-content-text-header">-->
+              <!--                  Привлекаем подрядчиков-->
+              <!--                </p>-->
+              <p class="tab-content-text content-text-3">
+                Оказание платных транспортных и ремонтных услуг и работ для населения и организаций.
+                Производство и реализация товаров народного потребления.
+                Коммерческая деятельность включая торгово-закупочную деятельность и оказание посреднеческих услуг.
+              </p>
+              <div class="how-weareworking-img-3"></div>
+            </div>
+
+            <div class="tab-content" data-target="four">
+              <!--                <p class="tab-content-text-header">-->
+              <!--                  Инспектируем все этапы работ-->
+              <!--                </p>-->
+              <p class="tab-content-text content-text-4">
+                Инженерно - техническая, внедренческая и консультационная деятельность.
+
+              </p>
+              <div class="how-weareworking-img-4"></div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <div class="news-titlep" id="news-link">Новости</div>
+
+
+    <section class="grid boxNews newsWindows" id="news-box">
+      <article class="grid-item">
+        <div class="image">
+          <img src="./IMG/newsPhotos/270623/preview2706.JPG" />
+        </div>
+        <div class="info">
+          <h2>Название</h2>
+          <div class="info-text">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Cumque ipsum, doloribus explicabo eius similique cupiditate nobis itaque
+              quo voluptatibus velit ducimus ipsam quisquam eos repellat beatae labore saepe quasi dolorum!</p>
+          </div>
+          <div class="button-wrap">
+            <a class="atuin-btn" href="./newsPages/news27062023.html">Подробнее</a>
           </div>
         </div>
-      </section>
+      </article>
 
-      <div class="news-titlep" id="news-link">Новости</div>
-
-
-      <section class="grid boxNews newsWindows">
-        <article class="grid-item">
-            <div class="image">
-                <img src="./IMG/newsPhotos/1.JPG" />
-            </div>
-            <div class="info">
-                <h2>Название</h2>
-                <div class="info-text">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                       Cumque ipsum, doloribus explicabo eius similique cupiditate nobis itaque 
-                       quo voluptatibus velit ducimus ipsam quisquam eos repellat beatae labore saepe quasi dolorum!</p>
-                </div>
-                <div class="button-wrap">
-                    <a class="atuin-btn" href="./newsPages/news27062023.html">Подробнее</a>
-                </div>
-            </div>
-        </article>
-        
-        <article class="grid-item">
-            <div class="image">
-                <img src="./IMG/newsPhotos/2.JPG" />
-            </div>
-            <div class="info">
-                <h2>Название</h2>
-                <div class="info-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam libero minima ratione
-                       voluptates cupiditate fuga nostrum, quia nulla beatae minus! Quod necessitatibus eum at et 
-                       ea nobis corrupti saepe nostrum!</p>
-                </div>
-                <div class="button-wrap">
-                    <a class="atuin-btn" href="./newsPages/news28062023.html">Подробнее</a>
-                </div>
-            </div>
-        </article>    
-    
-         <article class="grid-item">
-            <div class="image">
-                <img src="./IMG/newsPhotos/3.JPG" />
-            </div>
-            <div class="info">
-                <h2>Название</h2>
-                <div class="info-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum fugit nam dolorum repellendus pariatur, 
-                      veritatis voluptate iure beatae harum,
-                       iusto praesentium blanditiis. Minima quas illum nulla voluptatum expedita. Voluptatem, recusandae!</p>
-                </div>
-                <div class="button-wrap">
-                    <a class="atuin-btn"  href="">Подробнее</a>
-                </div>
-            </div>
-        </article>    
-
-        <article class="grid-item">
-          <div class="image">
-              <img src="./IMG/newsPhotos/4.JPG" />
+      <article class="grid-item">
+        <div class="image">
+          <img src="./IMG/newsPhotos/02062023.jpg" />
+        </div>
+        <div class="info">
+          <h2>Название</h2>
+          <div class="info-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam libero minima ratione
+              voluptates cupiditate fuga nostrum, quia nulla beatae minus! Quod necessitatibus eum at et
+              ea nobis corrupti saepe nostrum!</p>
           </div>
-          <div class="info">
-              <h2>Название</h2>
-              <div class="info-text">
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem nisi architecto eos quasi alias quae 
-                    nihil nesciunt similique aut excepturi mollitia unde, facere labore 
-                    fugit nostrum optio minus maiores pariatur?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem nisi architecto eos quasi alias quae 
-                    nihil nesciunt similique aut excepturi mollitia unde, facere labore 
-                    fugit nostrum optio minus maiores pariatur?</p>
-              </div>
-              <div class="button-wrap">
-                  <a class="atuin-btn" href="">Подробнее</a>
-              </div>
+          <div class="button-wrap">
+            <a class="atuin-btn" href="./newsPages/news28062023.html">Подробнее</a>
           </div>
-      </article> 
-    
-         
-        <a class="buttonNews" href="newsTest.html">Показать все</a>
+        </div>
+      </article>
+
+      <article class="grid-item">
+        <div class="image">
+          <img src="./IMG/newsPhotos/antiCorruption.jpg" />
+        </div>
+        <div class="info">
+          <h2>Международный молодежный конкурс социальной антикоррупционной рекламы «Вместе против коррупции!»</h2>
+          <div class="info-text">
+            <p>В текущем году Генеральной прокуратурой Российской Федерации организован Международный молодежный конкурс социальной антикоррупционной рекламы «Вместе против коррупции!».
+
+              К участию в конкурсе приглашаются молодые люди в возрасте от 14 до 35 лет...</p>
+          </div>
+          <div class="button-wrap">
+            <a class="atuin-btn" href="/newsPages/news2706corrruption.html">Подробнее</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="grid-item">
+        <div class="image">
+          <img src="./IMG/newsPhotos/4.JPG" />
+        </div>
+        <div class="info">
+          <h2>Название</h2>
+          <div class="info-text">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem nisi architecto eos quasi alias quae
+              nihil nesciunt similique aut excepturi mollitia unde, facere labore
+              fugit nostrum optio minus maiores pariatur?
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem nisi architecto eos quasi alias quae
+              nihil nesciunt similique aut excepturi mollitia unde, facere labore
+              fugit nostrum optio minus maiores pariatur?</p>
+          </div>
+          <div class="button-wrap">
+            <a class="atuin-btn" href="">Подробнее</a>
+          </div>
+        </div>
+      </article>
+
+
+
+      <a class="buttonNews" id="showAll-news">Показать все</a>
     </section>
 
 
 
-      <section class="section-questions box" id="docs">
-        <div class="container section-questions-container">
-          <h2 class="questions-header">Документация</h2>
+    <section class="section-questions box" id="docs">
+      <div class="container section-questions-container">
+        <h2 class="questions-header">Документация</h2>
 
-          <ul class="section-questions-list" id="accordion" role="tablist">
-            <li class="section-questions-item line-1">
-             <div class="section-questions-linc-close">
+        <ul class="section-questions-list" id="accordion" role="tablist">
+          <li class="section-questions-item line-1">
+            <div class="section-questions-linc-close">
               <a class="section-questions-linc" href="#" aria-label="">
                 <span class="questions-element element-1"></span>Информация
               </a>
-              </div>
+            </div>
 
-              <div class="accordion-text">
-                <ul>
-                   <li>
-                  <a class="docs_link" href="https://drive.google.com/file/d/1Y3pwkxEtwLrnf2r70d4m-BAu-8fYjzqR/view?usp=share_link" target="_blank">Информация
+            <div class="accordion-text">
+              <ul>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1Y3pwkxEtwLrnf2r70d4m-BAu-8fYjzqR/view?usp=share_link"
+                    target="_blank">Информация
                     ОГУП Кожевниковское ДРСУ по состоянию на 31.03.2023г</a>
-                  </li>
-                   <li>
-                  <a class="docs_link" href="https://drive.google.com/file/d/1t98ELI3l4Qnbrcf9sVPYoUil8IGUEzXG/view?usp=share_link" target="_blank">Информация
+                </li>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1t98ELI3l4Qnbrcf9sVPYoUil8IGUEzXG/view?usp=share_link"
+                    target="_blank">Информация
                     ОГУП Кожевниковское ДРСУ по состоянию на 31.12.2022г</a>
-                  </li>
-                   <li>
-                  <a class="docs_link" href="https://drive.google.com/file/d/1W4wo56QOxCl3vRuX0ewRA0FXwjBusETl/view?usp=sharing" target="_blank">Информация
+                </li>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1W4wo56QOxCl3vRuX0ewRA0FXwjBusETl/view?usp=sharing"
+                    target="_blank">Информация
                     ОГУП Кожевниковское ДРСУ по состоянию на 30.09.2022г</a>
-                  </li>
-                  <li>
-                  <a class="docs_link" href="https://drive.google.com/file/d/1Rmcj8ENynV_T1OOyXr7Z81IJrRZVvJ4o/view?usp=sharing" target="_blank">Информация
+                </li>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1Rmcj8ENynV_T1OOyXr7Z81IJrRZVvJ4o/view?usp=sharing"
+                    target="_blank">Информация
                     ОГУП Кожевниковское ДРСУ по состоянию на 30.06.2022г</a>
-                  </li>
-                  <li>
-                  <a class="docs_link" href="https://drive.google.com/file/d/1tO39gCbkU4cfDVhyJmekipZzaSN2BvcV/view?usp=sharing" target="_blank">Информация
+                </li>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1tO39gCbkU4cfDVhyJmekipZzaSN2BvcV/view?usp=sharing"
+                    target="_blank">Информация
                     ОГУП Кожевниковское ДРСУ по состоянию на 31.03.2022г</a>
-                  </li>
-                  <li>
-                    <a class="docs_link" href="https://drive.google.com/file/d/14Fon0FeoSI8P7kf3LnMyZxGDp-NKS0Px/view?usp=sharing" target="_blank">Информация
+                </li>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/14Fon0FeoSI8P7kf3LnMyZxGDp-NKS0Px/view?usp=sharing"
+                    target="_blank">Информация
                     ОГУП Кожевниковское ДРСУ по состоянию на 31.12.2021г</a>
-                  </li>
-                  <li>
-                    <a class="docs_link" href="https://drive.google.com/file/d/1cf1kY-azSMrgCzfF49opmuNU7YjsPUS0/view?usp=sharing" target="_blank">Информация
+                </li>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1cf1kY-azSMrgCzfF49opmuNU7YjsPUS0/view?usp=sharing"
+                    target="_blank">Информация
                     ОГУП Кожевниковское ДРСУ по состоянию на 30.09.2021г</a>
-                  </li> 
-                </ul>
+                </li>
+              </ul>
 
 
 
-              </div>
+            </div>
 
-            </li>
+          </li>
 
-            <li class="section-questions-item-2 line-2">
-              <div class="section-questions-linc-close-2">
+          <li class="section-questions-item-2 line-2">
+            <div class="section-questions-linc-close-2">
               <a class="section-questions-linc" href="#" aria-label="Бухгалтерская отчетность">
                 <span class="questions-element element-2"></span>Бухгалтерская отчетность</a>
-              </div>
+            </div>
 
-              <div class="accordion-text">
-                <ul>
-                  <li>
-                    <a class="docs_link" href="https://drive.google.com/file/d/11yNx6Er3XH9o44oVA1qoaRWvC64wZuXi/view?usp=share_link" target="_blank">Бухгалтерская отчетность на 31 марта 2023</a>
-                  </li>
-                  <li>
-                    <a class="docs_link" href="https://drive.google.com/file/d/1lVVvLLXm539J4C4OrLYwb2qyJfw62HDX/view?usp=sharing" target="_blank">Бухгалтерская отчетность за 9 месяцев 2022</a>
-                  </li>
-                  <li>
-                    <a class="docs_link" href="https://drive.google.com/file/d/1wNIuexAtSlN4dYxpvUX9Gx7FXGl78arJ/view?usp=sharing" target="_blank">бухгалтерская отчетность 1 пролугодие 2022г</a>
-                  </li>
-                   <li>
-                    <a class="docs_link" href="https://drive.google.com/file/d/1egdPkV_ETxYKQu4_IngMVbbGQ2TyFyTw/view?usp=sharing" target="_blank">бухгалтерская отчетность 1 квартал 2022г</a>
-                  </li>
-                  <li>
-                    <a class="docs_link" href="https://drive.google.com/file/d/17SdcBTJo4ws-lxALL2wqRXs2eatyhfhL/view?usp=sharing" target="_blank">бухгалтерская отчетность 1 полугодие 2021г</a>
-                  </li>
-                  <li>
-                    <a class="docs_link" href="https://drive.google.com/file/d/1MWva9a65xgf5NNC99OfXOkd7w_AWseVG/view?usp=sharing" target="_blank">бухгалтерская отчетность 9 месяцев 2021г</a>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a class="docs_link" href="https://drive.google.com/file/d/1BpMx5C31jpYn60nRRsWLL4vcaH7g2PSO/view?usp=sharing" target="_blank">бухгалтерская отчетность ДРСУ 1кв. 2021г</a>
-                  </li>
-                  <li>
-                    <a class="docs_link" href="https://drive.google.com/file/d/18dqmvnYYZhGjqf_73j7WmIz1-w5MRYWS/view?usp=sharing" target="_blank">Годовой отчет 2018г</a>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a class="docs_link" href="https://drive.google.com/file/d/1Jv5o73WsjS2rC3jwUX7G8fdPvAPvVmG5/view?usp=sharing" target="_blank">Годовой отчет 2019г</a>
-                  </li>
-                  <li>
-                    <a class="docs_link" href="https://drive.google.com/file/d/1oCZWg4H61_sHO23Ve_-txHzoMQQgqXWl/view?usp=sharing" target="_blank">Годовой отчет 2020г</a>
-                  </li>
-                  <li>
-                    <a class="docs_link" href="https://drive.google.com/file/d/1nUCwvGyafMo_I9UtIgKe-G0VVM5IMhpz/view?usp=sharing" target="_blank">Годовой отчет 2021г</a>
-                  </li>
-                  <li>
-                    <a class="docs_link" href="https://drive.google.com/file/d/1w5UzR6UybusVhEv0rfOn4AJLzO6LY89X/view?usp=sharing" target="_blank">Годовой отчет 2022г</a>
-                  </li>
-                </ul>
-              </div>
+            <div class="accordion-text">
+              <ul>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/11yNx6Er3XH9o44oVA1qoaRWvC64wZuXi/view?usp=share_link"
+                    target="_blank">Бухгалтерская отчетность на 31 марта 2023</a>
+                </li>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1lVVvLLXm539J4C4OrLYwb2qyJfw62HDX/view?usp=sharing"
+                    target="_blank">Бухгалтерская отчетность за 9 месяцев 2022</a>
+                </li>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1wNIuexAtSlN4dYxpvUX9Gx7FXGl78arJ/view?usp=sharing"
+                    target="_blank">бухгалтерская отчетность 1 пролугодие 2022г</a>
+                </li>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1egdPkV_ETxYKQu4_IngMVbbGQ2TyFyTw/view?usp=sharing"
+                    target="_blank">бухгалтерская отчетность 1 квартал 2022г</a>
+                </li>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/17SdcBTJo4ws-lxALL2wqRXs2eatyhfhL/view?usp=sharing"
+                    target="_blank">бухгалтерская отчетность 1 полугодие 2021г</a>
+                </li>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1MWva9a65xgf5NNC99OfXOkd7w_AWseVG/view?usp=sharing"
+                    target="_blank">бухгалтерская отчетность 9 месяцев 2021г</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1BpMx5C31jpYn60nRRsWLL4vcaH7g2PSO/view?usp=sharing"
+                    target="_blank">бухгалтерская отчетность ДРСУ 1кв. 2021г</a>
+                </li>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/18dqmvnYYZhGjqf_73j7WmIz1-w5MRYWS/view?usp=sharing"
+                    target="_blank">Годовой отчет 2018г</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1Jv5o73WsjS2rC3jwUX7G8fdPvAPvVmG5/view?usp=sharing"
+                    target="_blank">Годовой отчет 2019г</a>
+                </li>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1oCZWg4H61_sHO23Ve_-txHzoMQQgqXWl/view?usp=sharing"
+                    target="_blank">Годовой отчет 2020г</a>
+                </li>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1nUCwvGyafMo_I9UtIgKe-G0VVM5IMhpz/view?usp=sharing"
+                    target="_blank">Годовой отчет 2021г</a>
+                </li>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1w5UzR6UybusVhEv0rfOn4AJLzO6LY89X/view?usp=sharing"
+                    target="_blank">Годовой отчет 2022г</a>
+                </li>
+              </ul>
+            </div>
 
 
 
-            </li>
-            <li class="section-questions-item-3 line-3">
-              <div class="section-questions-linc-close-3">
+          </li>
+          <li class="section-questions-item-3 line-3">
+            <div class="section-questions-linc-close-3">
               <a class="section-questions-linc" href="#" aria-label="Учредительные документы">
                 <span class="questions-element element-3"></span>Учредительные документы
               </a>
-              </div>
-
-              <div class="accordion-text">
-                <ul>
-                   <li>
-                    <a class="docs_link" href="https://drive.google.com/file/d/1QNnAgPSnbK1Rx7_feE7cMSPBynaRpx4P/view?usp=share_link" target="_blank">Распоряжение о назначении Ефимова В.А.</a>
-                  </li>
-                  <li>
-                    <a class="docs_link" href="https://drive.google.com/file/d/1661BYx7Vfe06hQuJSQEKY5jMYlh2D7tN/view?usp=share_link" target="_blank">Лист записи в ЕГРЮЛ об изменении директора</a>
-                  </li>
-                  <li>
-                    <a class="docs_link" href="https://drive.google.com/file/d/1cRRO8RRJ_Jt-AKGZ4B28zqn_GbA_3vqk/view?usp=sharing" target="_blank">Устав организации</a>
-                  </li>
-                  <li>
-                    <a class="docs_link" href="https://drive.google.com/file/d/1OcWliH5KEP8kOx-sbrQKdcWrN_ElRqkb/view?usp=sharing" target="_blank">Изменения в Устав 01.07</a>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a class="docs_link" href="https://drive.google.com/file/d/1qMnSxRD0LmYTFm1y-_6iq6NIsxJQEv3x/view?usp=sharing" target="_blank">Изменения в Устав 29.07</a>
-                  </li>
-                  <li>
-                    <a class="docs_link" href="https://drive.google.com/file/d/1hLfLITz9-TK7s-hM9ag4UYh_QvidUZqZ/view?usp=sharing" target="_blank">Изменения в Устав 17.12</a>
-                  </li>
-                </ul>
-              </div>
-
-
-
-          </ul>
-        </div>
-      </section>
-
-
-        <section class="swiper" id="photo">
-
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide slide-1"></div>
-              <div class="swiper-slide slide-2"></div>
-              <div class="swiper-slide slide-3"></div>
-              <div class="swiper-slide slide-4"></div>
-              <div class="swiper-slide slide-5"></div>
-              <div class="swiper-slide slide-6"></div>
             </div>
 
-            <div class="swiper-pagination"></div>
-
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-          </div>
-
-          <script>
-            const swiper = new Swiper(".swiper-container", {
-              direction: "horizontal",
-              loop: true,
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-              },
-              navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              },
-              autoplay:{
-                delay: 5000
-              }
-            });
-          </script>
-        </section>
-
-
-
-      <section class="section-footer" id="contacts">
-        <div class="container section-footer-container">
-          <div class="section-footer-content-left">
-            <div class="footer-logo">
-              <a class="footer-logo-text" href="#" tabindex="-1">
-                ОГУП "Кожевниковское ДРСУ"
-              </a>
-
-            </div>
-
-            <div class="footer-info">
-              <ul class="footer-info-list">
-                <li class="footer-info-item">
-                  <a class="footer-info-link" href="" aria-label="Адрес">с.Кожевниково ул.Кирова 40</a>
+            <div class="accordion-text">
+              <ul>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1QNnAgPSnbK1Rx7_feE7cMSPBynaRpx4P/view?usp=share_link"
+                    target="_blank">Распоряжение о назначении Ефимова В.А.</a>
                 </li>
-
-                <li class="footer-info-item">
-                  <a class="footer-info-link" href="" aria-label="телефон">8-3-8244-21-921</a>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1661BYx7Vfe06hQuJSQEKY5jMYlh2D7tN/view?usp=share_link"
+                    target="_blank">Лист записи в ЕГРЮЛ об изменении директора</a>
                 </li>
-
-                <li class="footer-info-item">
-                  <a class="footer-info-link" href="" aria-label="почта">sekretar_drsu@mail.ru</a>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1cRRO8RRJ_Jt-AKGZ4B28zqn_GbA_3vqk/view?usp=sharing"
+                    target="_blank">Устав организации</a>
                 </li>
-
-                <li class="footer-info-item">
-                  <a class="footer-info-link" href="" aria-label="почта">ub_kogev@mail.ru</a>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1OcWliH5KEP8kOx-sbrQKdcWrN_ElRqkb/view?usp=sharing"
+                    target="_blank">Изменения в Устав 01.07</a>
                 </li>
-
-                <li class="footer-info-item">
-                  <a class="footer-info-link" href="" aria-label="почта">po_kogev@mail.ru</a>
+              </ul>
+              <ul>
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1qMnSxRD0LmYTFm1y-_6iq6NIsxJQEv3x/view?usp=sharing"
+                    target="_blank">Изменения в Устав 29.07</a>
                 </li>
-
-<!--                <li class="footer-info-item">-->
-<!--                  <a class="footer-info-link" href="#" aria-label="Конфиденциальность">Конфиденциальность</a>-->
-<!--                </li>-->
-
-<!--                <li class="footer-info-item">-->
-<!--                  <a class="footer-info-link" href="#" aria-label="Партнёрское соглашение"-->
-<!--                    >Партнёрское соглашение</a-->
-<!--                  >-->
-<!--                </li>-->
+                <li>
+                  <a class="docs_link"
+                    href="https://drive.google.com/file/d/1hLfLITz9-TK7s-hM9ag4UYh_QvidUZqZ/view?usp=sharing"
+                    target="_blank">Изменения в Устав 17.12</a>
+                </li>
               </ul>
             </div>
-          </div>
-
-          <div class="myMap" id="myMap1">
-
-            <script type="text/javascript">
-              ymaps.ready(init);
-              function init() {
-                var myMap = new ymaps.Map("myMap1", {
-                  center: [56.252822, 83.963661],
-                  zoom: 16,
-                  controls: [],
-                });
-
-                var myGeoObject = new ymaps.GeoObject({
-                  geometry: {
-                    type: "Point", // тип геометрии - точка
-                    coordinates: [56.252822, 83.963661], // координаты точки
-                  },
-                });
-
-                var myPlacemark = new ymaps.Placemark(
-                  [48.872185, 2.354215],
-                  {},
-                  {
-                    iconLayout: "default#image",
-                    iconImageHref: "img/Subtract.png",
-                    iconImageSize: [30, 42],
-                    iconImageOffset: [-3, -42],
-                  }
-                );
-
-                myMap.geoObjects.add(myGeoObject);
-                myMap.geoObjects.add(myPlacemark);
-              }
-            </script>
-          </div>
 
 
 
+        </ul>
+      </div>
+    </section>
 
 
+    <section class="swiper" id="photo">
 
-<!--          <div class="section-footer-content-right">-->
-<!--            <ul class="footer_contacts_list">-->
-
-<!--              <li class="footer_contacts_text">-->
-<!--                Кожевниково ул.Кирова 40.-->
-<!--              </li>-->
-<!--              <li class="footer_contacts_text">-->
-<!--                8-38244-21-921-->
-<!--              </li>-->
-<!--              <li class="footer_contacts_text">-->
-<!--                secretar_drsu@mail.ru-->
-<!--              </li>-->
-<!--              <li class="footer_contacts_text">-->
-<!--                ub_kogev@mail.ru-->
-<!--              </li>-->
-<!--              <li class="footer_contacts_text">-->
-<!--                ub_kogev@mail.ru-->
-<!--              </li>-->
-<!--              <li class="footer_contacts_text">-->
-<!--                ub_kogev@mail.ru-->
-<!--              </li>-->
-<!--            </ul>-->
-<!--          </div>-->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide-1"></div>
+          <div class="swiper-slide slide-2"></div>
+          <div class="swiper-slide slide-3"></div>
+          <div class="swiper-slide slide-4"></div>
+          <div class="swiper-slide slide-5"></div>
+          <div class="swiper-slide slide-6"></div>
         </div>
-      </section>
-    </main>
-    <script src="burger.js"></script>
-    <script src="txt.js"></script>
-    <script src="tabs.js"></script>
-  </body>
-</html>
 
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+      <script>
+        const swiper = new Swiper(".swiper-container", {
+          direction: "horizontal",
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          autoplay: {
+            delay: 5000
+          }
+        });
+
+      </script>
+    </section>
+
+
+
+    <section class="section-footer" id="contacts">
+      <div class="container section-footer-container">
+        <div class="section-footer-content-left">
+          <div class="footer-logo">
+            <a class="footer-logo-text" href="#" tabindex="-1">
+              ОГУП "Кожевниковское ДРСУ"
+            </a>
+
+          </div>
+
+          <div class="footer-info">
+            <ul class="footer-info-list">
+              <li class="footer-info-item">
+                <a class="footer-info-link" href="" aria-label="Адрес">с.Кожевниково ул.Кирова 40</a>
+              </li>
+
+              <li class="footer-info-item">
+                <a class="footer-info-link" href="" aria-label="телефон">8-3-8244-21-921</a>
+              </li>
+
+              <li class="footer-info-item">
+                <a class="footer-info-link" href="" aria-label="почта">sekretar_drsu@mail.ru</a>
+              </li>
+
+              <li class="footer-info-item">
+                <a class="footer-info-link" href="" aria-label="почта">ub_kogev@mail.ru</a>
+              </li>
+
+              <li class="footer-info-item">
+                <a class="footer-info-link" href="" aria-label="почта">po_kogev@mail.ru</a>
+              </li>
+
+              <!--                <li class="footer-info-item">-->
+              <!--                  <a class="footer-info-link" href="#" aria-label="Конфиденциальность">Конфиденциальность</a>-->
+              <!--                </li>-->
+
+              <!--                <li class="footer-info-item">-->
+              <!--                  <a class="footer-info-link" href="#" aria-label="Партнёрское соглашение"-->
+              <!--                    >Партнёрское соглашение</a-->
+              <!--                  >-->
+              <!--                </li>-->
+            </ul>
+          </div>
+        </div>
+
+        <div class="myMap" id="myMap1">
+
+          <script type="text/javascript">
+            ymaps.ready(init);
+
+            function init() {
+              var myMap = new ymaps.Map("myMap1", {
+                center: [56.252822, 83.963661],
+                zoom: 16,
+                controls: [],
+              });
+
+              var myGeoObject = new ymaps.GeoObject({
+                geometry: {
+                  type: "Point", // тип геометрии - точка
+                  coordinates: [56.252822, 83.963661], // координаты точки
+                },
+              });
+
+              var myPlacemark = new ymaps.Placemark(
+                [48.872185, 2.354215], {}, {
+                  iconLayout: "default#image",
+                  iconImageHref: "img/Subtract.png",
+                  iconImageSize: [30, 42],
+                  iconImageOffset: [-3, -42],
+                }
+              );
+
+              myMap.geoObjects.add(myGeoObject);
+              myMap.geoObjects.add(myPlacemark);
+            }
+
+          </script>
+        </div>
+
+
+
+
+
+
+        <!--          <div class="section-footer-content-right">-->
+        <!--            <ul class="footer_contacts_list">-->
+
+        <!--              <li class="footer_contacts_text">-->
+        <!--                Кожевниково ул.Кирова 40.-->
+        <!--              </li>-->
+        <!--              <li class="footer_contacts_text">-->
+        <!--                8-38244-21-921-->
+        <!--              </li>-->
+        <!--              <li class="footer_contacts_text">-->
+        <!--                secretar_drsu@mail.ru-->
+        <!--              </li>-->
+        <!--              <li class="footer_contacts_text">-->
+        <!--                ub_kogev@mail.ru-->
+        <!--              </li>-->
+        <!--              <li class="footer_contacts_text">-->
+        <!--                ub_kogev@mail.ru-->
+        <!--              </li>-->
+        <!--              <li class="footer_contacts_text">-->
+        <!--                ub_kogev@mail.ru-->
+        <!--              </li>-->
+        <!--            </ul>-->
+        <!--          </div>-->
+      </div>
+    </section>
+  </main>
+  <script src="burger.js"></script>
+  <script src="txt.js"></script>
+  <script src="tabs.js"></script>
+  <script src="allNews.js"></script>
+</body>
+
+</html>
