@@ -3,9 +3,9 @@
     
 }
 
-.news-titlep {
+.news-title {
     padding-top: 102px;
-    margin-left: 60px;
+    margin-left: 165px;
    
     font-family: Montserrat;
     font-size: 48px;
@@ -30,9 +30,9 @@
     column-gap: 30px;
     row-gap: 30px;
     padding: 20px 0;
-    width: 90%;
+    width: 83%;
     margin-top: 25px;
-    margin-left: 65px;
+    margin-left:179px;
 }
 /* Кол-во блоков на разных экранах */
 @media only screen and (max-width: 1200px) {
@@ -43,6 +43,8 @@
 @media only screen and (max-width: 900px) {
     .grid {
         grid-template-columns: 1fr 1fr;
+        width: 105%;
+    margin-left: 41px;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -202,4 +204,22 @@
   .corr {
     height: 100%;
     width: 100%;
+  }
+
+  .new-text-page {
+     margin-left: 1px;
+  margin-top: 23px;
+  width:99.5%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+  overflow: hidden;
+  height:200px;
+  transition:all 0.5s;
+
+  /* line-height: 32.99px; */
+  line-height: 200%;
+  color: var(--primay-color-gray);
   }
